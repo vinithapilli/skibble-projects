@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <div class="container">
+        <div id="text">
+            Australia, officially the Commonwealth of Australia, is a sovereign
+             country comprising the mainland of the Australian continent, the island
+            of Tasmania, and numerous smaller islands.Australia is the largest
+             country by area in Oceania and the world's sixth-largest country. 
+             Australia is the oldest, flattest,and driest inhabited continent,
+              with the least fertile soils.  
+        </div>
+    </div>
+    
+    <button class="button" id="uppercase">Uppercase</button>
+    <button class="button" id="lowercase">Lowercase</button>
+    <button class="button" id="capitalize">Capitalize</button>
+    <button class="button" id="reverse">Reverse</button><br>
+    <button class="button" id="replace">Replace</button>
+    <button class="button" id="reset">Reset</button>
+    
+
+
+<script>
+    // Get references to the HTML elements
+    const textElement = document.getElementById("text");
+    const uppercaseButton= document.getElementById("uppercase");
+    const lowercaseButton = document.getElementById("lowercase");
+    const capitalizeButton = document.getElementById("capitalize");
+    const reverseButton = document.getElementById("reverse");
+    const replaceButton= document.getElementById("replace")
+    const resetButton= document.getElementById("reset")
+
+    // Add event listeners to the buttons
+    uppercaseButton.addEventListener("click", () => {
+        textElement.textContent = textElement.textContent.toUpperCase();
+    });
+
+    lowercaseButton.addEventListener("click", () => {
+        textElement.textContent = textElement.textContent.toLowerCase();
+    });
+
+    capitalizeButton.addEventListener("click", () => {
+        const words = textElement.textContent.text.split(" ");
+        for (let i = 0; i < words.length; i++) {
+            words[i] = words[i][0].toUpperCase() + words[i].substring(1);
+        }
+        textElement.textContent.text = words.join(" ");
+    });
+    reverseButton.addEventListener("click", () => {
+            textElement.textContent = textElement.textContent.split('').reverse().join('');
+        });
+
+        replaceButton.addEventListener("click", () => {
+            const textToReplace = "I";
+            const replacementText = "Australia";
+            textElement.textContent = textElement.textContent.replace(textToReplace, replacementText);
+        });
+
+    resetButton.addEventListener("click", () => {
+    textElement.textContent = "Australia is the oldest, flattest,and driest inhabited continent";
+    });
+</script>
+</body>
+</html>
+
+
+</body>
+</html>
