@@ -11,9 +11,9 @@
    <h1 class="text">counter</h1> 
    <p class="text" id="countervalue">0</p>
    <div>
-    <button onclick="onDecrement">DECREMENT</button>
-    <button onclick="onReset">RESET</button>
-    <button onclick="onIncrement">INCREMENT</button>
+    <button onclick="onDecrement()">DECREMENT</button>
+    <button onclick="onReset()">RESET</button>
+    <button onclick="onIncrement()">INCREMENT</button>
     </div>
    </div>
    <script>
@@ -50,7 +50,7 @@
     }
     }
     function onReset(){
-        counterElement.textContent=updatedcountervalue;
+        counterElement.textContent= 0 ;
         counterElement.style.color="black";
 
     }

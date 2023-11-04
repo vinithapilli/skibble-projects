@@ -51,7 +51,7 @@
 .gallery img{
     cursor: pointer;
     padding: 5%;
-    filter: grayscale(100%);
+   
 }
 .gallery img:hover{
     transform: scale(0.8) rotate(-15edge);
