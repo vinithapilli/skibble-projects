@@ -1,8 +1,35 @@
 .background{
-    background-color: rgb(135, 108, 146);
+    background-color: rgb(163, 121, 160);
     width:cover;
     height:500px;
+    margin: 5px;
+    border-radius: 5px;
 }
 .text{
     text-align:center ;
+    font-style: italic;
+    font-size: 40px;
+    text-decoration: underline;
+    padding: 15px;
+    font-weight: bold;
+}
+.button{
+    text-align: center;
+    background-color: rgb(162, 222, 228);
+    font-size: 15px;
+    margin: 20px;
+    font-style: oblique;
+    border-radius: 5px;
+    padding: 15px;
+}
+.para{
+    text-align:center ;
+    font-size: 50px;
+    padding: 10px;
+    font-weight: bold;
+}
+.image{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
 }
