@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background">
+    <h1 class="heading">Gallery</h1>
+    <div id="fullImgBox" class="full-img" style="display: none;">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.GjIwCh89aXCNSbCMbriWkwHaE7&pid=Api&P=0&h=180" id="fullImg"/>
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="gallery">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.GjIwCh89aXCNSbCMbriWkwHaE7&pid=Api&P=0&h=180" class="image" onclick="openFullImg(this.src)"/>
+        <img src="http://3.bp.blogspot.com/-kcsk0TGl9GY/UC4VrMqDCFI/AAAAAAAADIU/dFhpPRx26-k/s1600/IMG_3628.JPG" class="image"  onclick="openFullImg(this.src)"/>
+        <img src="http://www.artensoft.com/sources/artensoft_com/ArtensoftPhotoCollageMaker/gallery/0002/photo-collage-example-0002_preview_600.jpg" class="image"  onclick="openFullImg(this.src)"/>
+        <img src="https://i.pinimg.com/originals/3c/0f/57/3c0f57823716ba25cb5eddc1c7ce8d46.jpg" class="image"  onclick="openFullImg(this.src)"/>
+       <img src="http://www.travelphoto.net/photos/pictures/australia/i2.jpg" class="image"  onclick="openFullImg(this.src)"/>
+       <img src="https://tse4.mm.bing.net/th?id=OIP.9l0muLY4-ZS2SEccwZCBpgHaE8&pid=Api&P=0&h=180" class="image"  onclick="openFullImg(this.src)" />
+    </div>
+    </div>
+<script>
+    var fullImgBox= document.getElementById("fullImgBox")
+    var fullImg=document.getElementById("fullImg")
+
+    function openFullImg(pic){
+        fullImgBox.style.display="flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+</script>
+</body>
+</html>

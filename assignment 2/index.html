@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="background" id="counterElement">
+   <h1 class="text">counter</h1> 
+   <p class="text" id="countervalue">0</p>
+   <div>
+    <button onclick="onDecrement">DECREMENT</button>
+    <button onclick="onReset">RESET</button>
+    <button onclick="onIncrement">INCREMENT</button>
+    </div>
+   </div>
+   <script>
+    let counterElement=document.getElementById("countervalue");
+
+    function onIncrement(){
+        let previouscountervalue=counterElement.textContent;
+        let updatedcountervalue=parseInt(previouscountervalue) + 1;
+        counterElement.textContent=updatedcountervalue;
+    
+    if(updatedcountervalue > 0){
+        counterElement.style.color="green";
+    }
+    else if(updatedcountervalue < 0){
+        counterElement.style.color="red"
+    }
+    else{
+        counterElement.style.color="black";
+    }
+    }
+    function onDecrement(){
+        let previouscountervalue=counterElement.textContent;
+        let updatedcountervalue=parseInt(previouscountervalue)-1;
+        counterElement.textContent=updatedcountervalue;
+    
+    if(updatedcountervalue > 0){
+        counterElement.style.color="green";
+    }
+    else if(updatedcountervalue < 0){
+        counterElement.style.color="red"
+    }
+    else{
+        counterElement.style.color="black";
+    }
+    }
+    function onReset(){
+        counterElement.textContent=updatedcountervalue;
+        counterElement.style.color="black";
+
+    }
+
+   </script>
+</body>
+</html>
