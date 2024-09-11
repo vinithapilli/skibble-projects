@@ -98,22 +98,11 @@ console.log(--x);
  //console.log(eligibleForLoan);
 
  //Or operator
- //let highIncome = false;
-//let goodCreditScore = false;
-//let eligibleForLoan = highIncome || goodCreditScore;
-//console.log(eligibleForLoan);
+ let highIncome = false;
+ let goodCreditScore = false;
+let eligibleForLoan = highIncome || goodCreditScore;
+console.log(eligibleForLoan);
 
 //Not operator
-//let applicationRefund = !eligibleForLoan;
-//console.log(applicationRefund);
-
-
-
-//bitwise operator
-const readPermission = 4;
-const writePermission = 2;
-const executePermission = 1;
-
-let myPermission = 0;
-myPermission = myPermission | writePermission;
-
+let applicationRefund = !eligibleForLoan;
+console.log(applicationRefund);
