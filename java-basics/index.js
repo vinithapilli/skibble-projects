@@ -118,3 +118,151 @@ console.log(myPermission);
 
 let message = (myPermission & readPermission) ? 'yes' : 'no';
 console.log(message);
+
+//switch operator
+//let role = 'moderator';
+//switch (role){
+  //  case 'guest':
+        console.log('guest user');
+  //      break;
+
+     //   case 'moderator':
+            console.log('moderator user');
+   //         break;
+//}
+
+let role = '';
+if (role === 'guest' && hour > 12)
+    console.log('guest');
+else if (role === 'moderator') 
+    console.log('moderator')
+    else 
+   console.log('unknown user');
+
+   //functions
+   
+   let num = min(6, 3);
+   console.log(num);
+   
+   function min(a, b){
+   return(a > b) ? a : b;
+   }
+   
+//isLandscape
+   console.log(isLandscape(500, 700));
+
+   function isLandscape(width, height){
+    return(width > height);
+   }
+
+   //fizzbuzz
+   const output = fizzBuzz(10);
+   console.log(output);
+
+   function fizzBuzz(input) {
+    if (typeof input !== 'number')
+        return 'Not a number';
+
+    if (input % 3 === 0)
+        return 'fizz';
+    
+    if (input % 7 === 0)
+        return 'Buzz';
+
+    if((input % 3 === 3) && (input % 7 === 0))
+        return 'fizzBuzz';
+     
+    return input;
+   }
+
+
+   //Even & Odd
+   showNumbers(3);
+
+   function showNumbers(limit){
+    for (let i = 0; i <= limit; i++){
+        const message = (i % 2 === 0) ? 'Even' : 'Odd';
+        console.log(i, message);
+    }
+   }
+
+   //count Truthy
+
+   const array = [0, null, undefined,'',1,2, 3];
+
+   console.log(countTruthy(array));
+
+   function countTruthy(array){
+    let count = 0;
+    for (let value of array)
+        if (value)
+          count++;
+        return count;
+   }
+
+   //string 
+
+   const movie = {
+    title: 'cat',
+    launchYear:'2002',
+    rating: 3.4,
+    producer: 'unknown',
+   };
+
+   showProperties(movie);
+   function showProperties(obj){
+    for (let key in obj){
+        if (typeof obj[key] === 'string' )
+            console.log(key, obj[key]);
+    }
+   }
+
+   //multiple of 3 & 5
+   console.log(sum(10));
+
+   function sum(limit){
+    let sum = 0;
+    for (let i=0; i <= limit; i++)
+        if (i % 3 === 0 || i % 5 === 0)
+            sum += i;
+    return(sum);
+   }
+
+//Grades
+
+   const marks = [80, 80, 40];
+   console.log(calculateGrade(marks));
+
+   function calculateGrade(marks){
+   const average = calculateGrade(marks);
+    if (average < 60) return 'F';
+    if (average < 70) return 'D';
+    if (average < 80) return 'C';
+    if (average < 90) return 'B';
+    return'A';
+   }
+
+   function calculateGrade(marks){
+    let sum = 0;
+    for (let value of marks)
+        sum += value;
+   return sum / marks.length;
+   return average;
+   }
+
+//stars
+showStars(3);
+
+function showStars(rows){
+for (let row = 1; row <= rows; row++) {
+let pattern = '';
+for (let i = 0; i < row; i++)
+    pattern += '*';
+console.log(pattern);
+}
+}
+  
+   
+   
+
+   
