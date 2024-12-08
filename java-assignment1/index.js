@@ -7,6 +7,7 @@ function factorial(n) {
     console.log("Factorial of 6: ",factorial(6));
 
     console.log("Factorial of 7: ",factorial(-7));
+    
 
     // If a string is a palindrome or not
 
@@ -42,4 +43,4 @@ function factorial(n) {
         return result;
      }
 
-     console.log("10 + 5 =", calculator(10, 5, '-'));
+     console.log("10 + 5 =", calculator(10, 5, '+'));
